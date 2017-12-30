@@ -1,5 +1,7 @@
 package JuliePackage;
 
+import java.awt.*;
+
 /**
  * Created by Julie on 12/29/2017.
  */
@@ -43,5 +45,18 @@ public class Main {
         System.out.println(adelaideCrows.compareTo(hawthorn));
         System.out.println(hawthorn.compareTo(adelaideCrows));
         System.out.println(melbourne.compareTo(fremantle));
+
+        League<Team<FootballPlayer>> footballLeague = new League<>("AFL");
+        footballLeague.add(adelaideCrows);
+        footballLeague.add(melbourne);
+        footballLeague.add(hawthorn);
+
+        League<Team<BaseballPlayer>> baseballLeague = new League<>("MLB");
+        baseballLeague.add(chicagoCubs);
+
+        footballLeague.showLeagueTable();
+
     }
+
+
 }
