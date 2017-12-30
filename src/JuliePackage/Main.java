@@ -19,6 +19,16 @@ public class Main {
         Team<SoccerPlayer> austinBats = new Team<>("Austin Bats");
         austinBats.addPlayer(beckham);
 
-        System.out.println(adelaideCrows.numPlayers());
+       // System.out.println(adelaideCrows.numPlayers());
+
+        Team<FootballPlayer> hawthorn = new Team<>("Melbourne");
+        Team<FootballPlayer> fremantle = new Team<>("Fremantle");
+
+        hawthorn.matchResult(fremantle, 1, 0);
+        hawthorn.matchResult(adelaideCrows, 3, 8);
+
+        adelaideCrows.matchResult(fremantle, 2, 1);
+
+
     }
 }
